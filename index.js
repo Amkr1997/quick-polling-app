@@ -85,6 +85,7 @@ app.post("/post/answer/:answerId/choice/:choiceId", async (req, res) => {
   }
 });
 
+// Get All Answers
 app.get("/all/polls/answers", async (req, res) => {
   try {
     const allAnswers = await Answer.find();
